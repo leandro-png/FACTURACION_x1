@@ -1,1 +1,1 @@
-# se creó el repositorio POPO
+# Calculadora de energias, demandas por tramos analizando los perfiles de un medidor
