@@ -1,0 +1,189 @@
+object xls: Txls
+  Left = 441
+  Height = 544
+  Top = 220
+  Width = 503
+  Anchors = []
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsToolWindow
+  Caption = 'DISCAR 2020'
+  ClientHeight = 544
+  ClientWidth = 503
+  Color = clSkyBlue
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  ParentBiDiMode = False
+  Position = poScreenCenter
+  UseDockManager = True
+  LCLVersion = '2.0.10.0'
+  object boton_archivo_1: TButton
+    Left = 8
+    Height = 30
+    Top = 10
+    Width = 480
+    Caption = 'ABRIR  XLS...'
+    Font.Style = [fsBold]
+    OnClick = boton_archivo_1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object grilla1: TStringGrid
+    Left = 8
+    Height = 328
+    Top = 64
+    Width = 480
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 1
+    ColWidths = (
+      75
+      75
+      75
+      75
+      75
+      80
+    )
+  end
+  object grilla2: TStringGrid
+    Left = 8
+    Height = 328
+    Top = 64
+    Width = 480
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 2
+    ColWidths = (
+      75
+      75
+      75
+      75
+      75
+      80
+    )
+  end
+  object Label1: TLabel
+    Left = 210
+    Height = 20
+    Top = 220
+    Width = 44
+    Caption = 'Label1'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 30
+    Height = 20
+    Top = 40
+    Width = 53
+    Caption = 'Archivo:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 26
+    Top = 512
+    Width = 320
+    Caption = 'COPIAR A PORTAPAPELES'
+    Color = clRed
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 3
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 10
+    Height = 20
+    Top = 400
+    Width = 73
+    Caption = 'TERMINAL:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 10
+    Height = 20
+    Top = 420
+    Width = 77
+    Caption = 'DOMICILIO:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 10
+    Height = 20
+    Top = 440
+    Width = 65
+    Caption = 'SERVICIO:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 10
+    Height = 20
+    Top = 460
+    Width = 59
+    Caption = 'TITULAR:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 10
+    Height = 20
+    Top = 480
+    Width = 65
+    Caption = 'PERIODO:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 30
+    Height = 20
+    Top = 20
+    Width = 44
+    Caption = 'Label8'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button2: TButton
+    Left = 384
+    Height = 26
+    Top = 512
+    Width = 94
+    Caption = 'LIMPIAR'
+    Color = clRed
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 4
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = '*.xls*|*.xls*'
+    Left = 150
+    Top = 276
+  end
+  object ApplicationProperties1: TApplicationProperties
+    Left = 71
+    Top = 276
+  end
+end
